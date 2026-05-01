@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="mainNav">
+        <button onclick="toggleMenu()" class="menu-toggle">☰</button>
+        <div class="nav-content">
+            <div class="logo">Hot Beans</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About.html">About us</a></li>
+                <li><a href="Courses.html">Courses</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Application.html">Application Form</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <img src="logo.png" alt="Hot Beans Logo" class="logo-image">
+        <header>
+            <h1>Contact Us</h1>
+            <p class="subtitle">We'd love to hear from you! Get in touch with Hot Beans today.</p>
+        </header>
+    </div>
+
+    <div class="contact-section">
+        <div class="contact-content">
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <h2>Get In Touch</h2>
+                <div class="info-block">
+                    <h3>📞 Phone</h3>
+                    <p><a href="tel:"></a></p>
+                </div>
+                <div class="info-block">
+                    <h3>📧 Email</h3>
+                    <p><a href="mailto:info@hotbeans.com">info@hotbeans.com</a></p>
+                </div>
+                <div class="info-block">
+                    <h3>📍 Address</h3>
+                    <p>
+                        Hot Beans Coffee Academy<br>
+                        123 Bean Street<br>
+                        Durham, DH1 3AA<br>
+                        United Kingdom
+                    </p>
+                </div>
+                <div class="info-block">
+                    <h3>🕐 Opening Hours</h3>
+                    <p>
+                        Monday - Friday: 9:00 AM - 6:00 PM<br>
+                        Saturday: 10:00 AM - 4:00 PM<br>
+                        Sunday: Closed
+                    </p>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h2>Send us a Message</h2>
+                <form id="contactForm" onsubmit="handleFormSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a topic</option>
+                            <option value="course-inquiry">Course Inquiry</option>
+                            <option value="general-question">General Question</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="partnership">Partnership Opportunity</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+                <div id="formMessage" class="form-message"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Hot Beans. All rights reserved.</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
