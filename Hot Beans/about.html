@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="mainNav">
+        <button onclick="toggleMenu()" class="menu-toggle">☰</button>
+        <div class="nav-content">
+            <div class="logo">Hot Beans</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About.html">About us</a></li>
+                <li><a href="Courses.html">Courses</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Application.html">Application Form</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <img src="logo.png" alt="Hot Beans Logo" class="logo-image">
+        <header>
+            <h1>About Us</h1>
+        </header>
+    </div>
+
+
+    <main class="about-page">
+        <section class="team-carousel-section">
+            <h1>Meet Our Team</h1>
+            <div class="team-carousel">
+                <button class="carousel-btn prev-btn" aria-label="Previous profile">‹</button>
+                <div class="carousel-track-container">
+                    <ul class="carousel-track" id="profileTrack">
+                        <li class="carousel-slide current-slide">
+                            <div class="profile-card">
+                                <img src="James.png" alt="James, CEO & Founder">
+                                <h2>James</h2>
+                                <p class="role">CEO & Founder</p>
+                                <p>James leads the company vision and brings product design, strategy, and client success together.</p>
+                            </div>
+                        </li>
+                        <li class="carousel-slide">
+                            <div class="profile-card">
+                                <img src="Alex.png" alt="Alex, Lead Developer">
+                                <h2>Alex</h2>
+                                <p class="role">Lead Developer</p>
+                                <p>Alex architects scalable web applications and guides the team through modern frontend and backend builds.</p>
+                            </div>
+                        </li>
+                        <li class="carousel-slide">
+                            <div class="profile-card">
+                                <img src="Jade.png" alt="Jade, UX Designer">
+                                <h2>Jade</h2>
+                                <p class="role">UX/UI Designer</p>
+                                <p>Jade transforms user research into clean interfaces and ensures every product feels intuitive and polished.</p>
+                            </div>
+                        </li>
+                        <li class="carousel-slide">
+                            <div class="profile-card">
+                                <img src="Noah.png" alt="Noah, Project Manager">
+                                <h2>Noah</h2>
+                                <p class="role">Project Manager</p>
+                                <p>Noah keeps projects on track, coordinates teams, and delivers digital products on time and on budget.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <button class="carousel-btn next-btn" aria-label="Next profile">></button>
+            </div>
+            <div class="carousel-nav" id="carouselNav">
+                <button class="carousel-indicator current-slide" aria-label="Profile 1"></button>
+                <button class="carousel-indicator" aria-label="Profile 2"></button>
+                <button class="carousel-indicator" aria-label="Profile 3"></button>
+                <button class="carousel-indicator" aria-label="Profile 4"></button>
+            </div>
+        </section>
+    </main>
+
+ 
+
+
+    <footer>
+        <p>&copy; 2026 Hot Beans. All rights reserved.</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
