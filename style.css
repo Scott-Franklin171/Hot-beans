@@ -11,6 +11,7 @@
     padding: 1.5rem 1rem;
     z-index: 1000;
     font-size: 40px;
+    color: #5F6B76;
 }
 
 .title {
@@ -114,11 +115,13 @@ p {
     background: rgba(255, 255, 255, 0.08);
     border: 2px solid #ffb703;
     border-radius: 12px;
+    color: #f8fafc;
 }
 
 .h1 {
     display: flex;
     align-items: center;
+    color: #f8fafc;
 }
 
 .home-content {
