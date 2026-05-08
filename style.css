@@ -443,7 +443,6 @@ legend {
     }
 }
 
-/* Contact Page Styling */
 .subtitle {
     color: #e2e8f0;
     font-size: 1rem;
@@ -567,7 +566,6 @@ legend {
     }
 }
 
-/* Modal Styling */
 .modal {
     display: none;
     position: fixed;
@@ -695,12 +693,13 @@ legend {
     background: #ffcc1f;
 }
 
-/* Modal Styling */
+
 .modal {
     display: none;
     position: fixed;
     z-index: 2000;
-    left: 0  top: 0;
+    left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.6);
@@ -712,7 +711,8 @@ legend {
         opacity: 0;
     }
     to {
-        opacit }
+        opacity: 1; 
+    }
 }
 
 .modal.show {
@@ -744,7 +744,7 @@ legend {
 
 .modal-header {
     display: flex;
-    justify-contenlex-end;
+    justify-content: flex-end;
     padding: 1rem 1.5rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -754,7 +754,7 @@ legend {
     font-weight: 300;
     color: #64748b;
     cursor: pointer;
-    trans 0.2s ease;
+    transition: color 0.2s ease;
 }
 
 .close-btn:hover {
@@ -769,14 +769,14 @@ legend {
 
 .success-icon {
     width: 80px;
-    height: px;
+    height: 80px;
     border-radius: 50%;
     background: rgba(34, 197, 94, 0.2);
     border: 3px solid #22c55e;
     display: flex;
     align-items: center;
     justify-content: center;
-    fonize: 3rem;
+    font-size: 3rem;
     color: #22c55e;
     margin: 0 auto 1.5rem;
     font-weight: 700;
@@ -789,7 +789,7 @@ legend {
 }
 
 .modal-body p {
-   argin: 0.75rem 0;
+   margin: 0.75rem 0;
     color: #475569;
     font-size: 1rem;
 }
@@ -799,7 +799,7 @@ legend {
     padding-top: 1.5rem;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     color: #64748b;
-    font-siz5rem;
+    font-size: 0.875rem;
 }
 
 .modal-footer {
@@ -819,7 +819,7 @@ legend {
     transition: background 0.2s ease;
 }
 
-.modal-bhover {
+.modal-btn:hover {
     background: #ffcc1f;
 }
 
@@ -833,6 +833,6 @@ legend {
     }
 
     .modal-body h2 {
-        fze: 1.25rem;
+        font-size: 1.25rem;
     }
 }
